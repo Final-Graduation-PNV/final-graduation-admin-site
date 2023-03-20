@@ -1,0 +1,63 @@
+.modalBackground-createMp {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -70px;
+  font-family: "Open Sans", sans-serif;
+}
+.modalContainer-createMp {
+  width: 400px;
+  height: 220px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+.modal-icon-createMp {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.createMp-text__tittle {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 0px;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 30px;
+}
+.createMp-des {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 20px;
+}
+.createMp-btn__no {
+  padding: 10px 70px;
+  border: none;
+  background-color: #d9d9d9;
+  font-size: 18px;
+  color: #000000;
+  border-radius: 10px;
+}
+.createMp-btn__yes {
+  padding: 10px 70px;
+  border: none;
+  background-color: #3c7026;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 10px;
+}
+.createMp-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.navLeft-Market p {
+  cursor: pointer;
+}

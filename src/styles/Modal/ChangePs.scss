@@ -1,0 +1,62 @@
+.modalBackground-changePs {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -70px;
+  font-family: "Open Sans", sans-serif;
+}
+.modalContainer-changePs {
+  width: 517px;
+  height: 500px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+
+  // justify-content: space-around;
+}
+.changePs-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal-icon-changePs {
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
+}
+.changePs-text__tittle {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 0px;
+}
+.changePs-option {
+  width: 94%;
+}
+.changePs-option select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.changePs-btn {
+  width: 94%;
+}
+.changePs-btn__search {
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #3c7026;
+  border: none;
+  font-size: 20px;
+  color: #fff;
+  margin-top: 10px;
+  cursor: pointer;
+}

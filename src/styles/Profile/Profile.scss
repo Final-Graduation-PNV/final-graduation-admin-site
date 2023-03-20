@@ -1,0 +1,113 @@
+@import "../theme.scss";
+.container-Profile {
+  width: 100%;
+  height: 760px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  background-color: #eeee;
+}
+.profile__tittle {
+  font-size: 30px;
+  font-weight: 800;
+  display: flex;
+}
+.container-profile {
+  width: 843px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .profile {
+    width: 800px;
+    height: 370px;
+    background-color: $backgroundcolor__profile;
+    border-radius: 10px;
+    padding: 10px 20px;
+  }
+  .profile-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: $font-size__midium;
+    font-weight: $font-weight__midium;
+  }
+  .faClose {
+    padding: 8px 12px;
+    background-color: #eeee;
+    border-radius: 20px;
+    color: #3c7026;
+  }
+  .profile-account {
+    display: flex;
+    flex-direction: row;
+    border: black 1px;
+    .profile-info-text {
+      .profile-info-text__name {
+        margin-right: 50px;
+        font-size: 15px;
+        font-weight: $font-weight__midium;
+        margin-left: 20px;
+      }
+      .faEdit {
+        color: #3c7026;
+        font-weight: 800;
+        margin-right: 10px;
+      }
+      .profile-info-text__edit {
+        padding: 5px 10px 6px;
+        margin-left: 20px;
+        background-color: #949895;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+  .profile-location {
+    display: flex;
+    flex-direction: column;
+    .profile-location__title {
+      display: flex;
+      font-weight: $font-weight__midium;
+    }
+    .profile-location__text {
+      padding: 10px 20px;
+      border-radius: 10px;
+      border: 1px solid #232121;
+    }
+  }
+  .profile-gener {
+    display: flex;
+    justify-content: space-between;
+    .profile-phone__text,
+    .profile-gender_name {
+      padding: 10px 20px;
+      border-radius: 10px;
+      width: 350px;
+      border: 1px solid #232121;
+    }
+  }
+  .profile-phone__title,
+  .profile-gender__title {
+    display: flex;
+    font-weight: $font-weight__midium;
+  }
+  .btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 15px;
+    border-radius: 10px;
+    font-weight: 600;
+    .btn__cancel {
+      padding: 8px 40px;
+      background-color: #949895;
+    }
+    .btn__save {
+      padding: 8px 40px;
+      background-color: $button;
+      color: $backgroundcolor;
+    }
+  }
+}

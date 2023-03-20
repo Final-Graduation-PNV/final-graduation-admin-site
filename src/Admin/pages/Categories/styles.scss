@@ -1,0 +1,74 @@
+.add-category {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__form {
+        width: 525px;
+        height: 127px;
+        border-radius: 12px;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.35);
+        display: flex;
+        flex-direction: column;
+        padding: 10px 20px 20px 20px;
+        position: relative;
+
+        &__header {
+            display: flex;
+            justify-content: space-between;
+
+            &-label {
+                font-weight: bold;
+                font-size: 25px;
+
+            }
+
+            &-button {
+                padding: 10px;
+            }
+        }
+
+        &__button {
+            margin-top: 1em;
+            padding: 0.8em;
+            padding-left: 2em;
+            padding-right: 2em;
+            cursor: pointer;
+            color: #FFFFFF;
+            font-size: 0.9rem;
+            font-weight: 700;
+            border-radius: 8px;
+            text-transform: uppercase;
+            border: 1px solid #3c7026;
+            background-color: #3c7026;
+        }
+
+        &__input {
+            font-style: inherit;
+            font-variant: inherit;
+            font-weight: inherit;
+            font-stretch: inherit;
+            line-height: inherit;
+            font-family: inherit;
+            letter-spacing: inherit;
+            border: 1px solid #dddddd;
+
+            // border: 0px;
+            box-sizing: content-box;
+            background: none transparent;
+            margin: 0px;
+            display: block;
+            min-width: 0px;
+            width: 96%;
+            border-radius: 8px;
+            color: #000000;
+            font-size: 0.75rem;
+            padding: 0.625rem;
+        }
+    }
+}

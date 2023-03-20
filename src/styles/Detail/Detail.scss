@@ -1,0 +1,243 @@
+@import "../theme.scss";
+
+.container {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  // width: 100vw;
+  // height: 100%;
+  background: #eeeeee;
+  font-family: "Open Sans", sans-serif;
+}
+.detail {
+  width: 1000px;
+  margin: auto;
+  padding: 55px 0;
+  font-family: "Open Sans", sans-serif;
+}
+.detail-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail-top__nav p {
+  font-size: 20px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+.detail-top__nav a {
+  color: blue;
+  font-size: 14px;
+  text-decoration: none;
+}
+.detail-contain {
+  display: flex;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.detail-img {
+  width: 38%;
+}
+.detail-img__one {
+  width: 330px;
+  height: 300px;
+  object-fit: cover;
+  object-position: 50% 0;
+}
+.detail-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 62%;
+}
+.detail-text__name {
+  font-size: 30px;
+  font-weight: 600;
+}
+.detail-img__large {
+  width: 216px;
+  height: 314px;
+}
+
+.img-small {
+  width: 61px;
+  height: 75px;
+}
+.detail-text__title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 0px;
+}
+
+.text-evaluate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 0px;
+  .fa-icon {
+    color: yellow;
+  }
+  .detail-text__view {
+    font-size: 10px;
+  }
+}
+.text-price {
+  font-size: 30px;
+  font-weight: 600;
+  color: red;
+  line-height: 0px;
+}
+.text-ship {
+  display: flex;
+  align-items: center;
+}
+.faTruckFast {
+  font-size: 35px;
+  color: #13542c;
+  margin-right: 30px;
+}
+.text-quantily {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.btn-buy {
+  color: black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  background-color: red;
+  border: 1px solid red;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.btn-cart {
+  background-color: #13542c;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.ship__title,
+.ship__desc {
+  font-size: 15px;
+  line-height: 5px;
+}
+.quantily__plus,
+.quantily__number,
+.quantily__minus {
+  border: 1px #fff3ed solid;
+  padding: 2px 10px 6px 10px;
+  height: 20px;
+  cursor: pointer;
+}
+.text-quantily-detail {
+  display: flex;
+  justify-content: flex-start;
+}
+.quantily-detail__plus,
+.quantily-detail__number,
+.quantily-detail__minus {
+  border: 1px #fff3ed solid;
+  padding: 2px 10px 6px 10px;
+  height: 20px;
+  cursor: pointer;
+}
+.shop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.shop__img {
+  width: 65px;
+  height: 65px;
+  margin-right: 20px;
+  border-radius: 50px;
+}
+.shopower__name {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 0px;
+}
+.shopowner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-chat {
+  border: none;
+  padding: 10px 20px;
+  background-color: white;
+  border: 1px red solid;
+  color: red;
+  margin-right: 20px;
+}
+.btn-seeshop {
+  border: none;
+  padding: 10px 20px;
+  background-color: white;
+  border: 1px #808080 solid;
+  color: #808080;
+}
+.product-des {
+  padding: 10px 20px;
+  background: white;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.product-des__tittle {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 0px;
+}
+.review {
+  margin-top: 10px;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.review__tittle {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 0px;
+}
+.people-review {
+  display: flex;
+  align-items: center;
+}
+.pReview {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+.review-product__name {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 0px;
+}
+.fa-start {
+  color: yellow;
+  font-size: 10px;
+  line-height: 0px;
+}
+.review-product__star {
+  line-height: 0px;
+}
+.review-product__comment {
+  line-height: 0px;
+}

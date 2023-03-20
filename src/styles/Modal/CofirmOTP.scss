@@ -1,0 +1,97 @@
+.modalBackground-cofirmOTP {
+  width: 100vw;
+  height: 900px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -70px;
+  font-family: "Open Sans", sans-serif;
+}
+.modalcontainer-confirmOTP {
+  width: 400px;
+  height: 290px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  padding: 25px 25px 35px 25px;
+  justify-content: space-between;
+}
+
+.confirmOTP__title {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 0;
+  text-align: center;
+  color: #3c7026;
+}
+.confirmOTP {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.faEnvelopeCircleCheck {
+  color: #3c7026;
+  font-size: 30px;
+  margin-right: 10px;
+}
+.confirmOTP p {
+  font-size: 13px;
+}
+.countSeconds {
+  color: red;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.inputConfirm input {
+  width: 97%;
+  padding: 10px 5px;
+  border-radius: 10px;
+  border: 1px solid rgb(159, 155, 155);
+  outline: none;
+}
+
+.btn-confirmOPT {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.btn-confirmOPT__cancel {
+  padding: 7px 50px;
+  border-radius: 20px;
+  outline: none;
+  border: 2px solid #3c7026;
+  background-color: #fff;
+  font-size: 15px;
+  color: #3c7026;
+  font-weight: 600;
+}
+.btn-confirmOPT__confirm {
+  padding: 7px 50px;
+  border-radius: 20px;
+  outline: none;
+  background-color: #3c7026;
+  font-size: 15px;
+  color: #3c7026;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+}
+.btn-sendOTP {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.btn_sendOTP {
+  border: none;
+  background-color: #fff;
+  color: #3c7026;
+  margin: 0px auto;
+  font-style: italic;
+  font-size: 13px;
+  cursor: pointer;
+}

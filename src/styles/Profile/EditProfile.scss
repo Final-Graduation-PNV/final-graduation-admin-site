@@ -1,0 +1,114 @@
+@import "../theme.scss";
+.container-EditProfile {
+  width: 100%;
+  height: 760px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  background-color: #eeee;
+}
+.editProfile__tittle {
+  font-size: 30px;
+  font-weight: 800;
+  display: flex;
+}
+.container-Editprofile {
+  width: 843px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .editProfile {
+    width: 800px;
+    height: 434px;
+    background-color: $backgroundcolor__profile;
+    border-radius: 10px;
+    padding: 10px 20px;
+  }
+  .editProfile-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: $font-size__midium;
+    font-weight: $font-weight__midium;
+  }
+  .faClose {
+    padding: 8px 12px;
+    background-color: #eeee;
+    border-radius: 20px;
+    color: #3c7026;
+  }
+  .editProfile-account {
+    display: flex;
+    flex-direction: row;
+    border: black 1px;
+    .editProfile-info-text {
+      .editProfile-info-text__name {
+        margin-right: 50px;
+        font-size: 15px;
+        font-weight: $font-weight__midium;
+        margin-left: 20px;
+      }
+      .faEdit {
+        color: #3c7026;
+        font-weight: 800;
+        margin-right: 10px;
+      }
+      .editProfile-info-text__edit {
+        padding: 5px 10px 6px;
+        margin-left: 20px;
+        background-color: #949895;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+  .editProfile-location {
+    display: flex;
+    flex-direction: column;
+    .editProfile-location__title {
+      display: flex;
+      font-weight: $font-weight__midium;
+    }
+    .editProfile-location__text {
+      padding: 10px 20px;
+      border-radius: 10px;
+      border: 1px solid #232121;
+    }
+  }
+  .editProfile-gener {
+    display: flex;
+    justify-content: space-between;
+    .editProfile-phone__text,
+    .editProfile-gender_name {
+      padding: 10px 20px;
+      border-radius: 10px;
+      width: 350px;
+      border: 1px solid #232121;
+    }
+  }
+  .editProfile-phone__title,
+  .editProfile-gender__title {
+    display: flex;
+    font-weight: $font-weight__midium;
+  }
+  .btn-edit {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 15px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    .btn-edit__cancel {
+      padding: 8px 40px;
+      background-color: #949895;
+    }
+    .btn-edit__save {
+      padding: 8px 40px;
+      background-color: $button;
+      color: $backgroundcolor;
+    }
+  }
+}
