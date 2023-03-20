@@ -1,10 +1,11 @@
 
-import Auth from "./navigations/Auth";
+import AdminPage from "./Admin";
+
 function App() {
 
   return (
     <>
-      <Auth />
+      <AdminPage/>
     </>
   )
 }
