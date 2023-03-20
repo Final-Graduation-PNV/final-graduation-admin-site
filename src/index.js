@@ -7,7 +7,7 @@ import './index.css';
 import './Admin/index.scss'
 import store from './redux/store';
 import reportWebVitals from './reportWebVitals';
-import "./styles/StylesPageIntro.scss";
+
 
 // import 'bootstrap/dist/css/bootstrap.min.css';
 

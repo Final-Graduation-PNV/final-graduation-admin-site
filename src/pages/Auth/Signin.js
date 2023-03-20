@@ -7,7 +7,7 @@ import { useDispatch } from 'react-redux';
 import { Link, useNavigate } from "react-router-dom";
 
 import { signin } from '../../api/authAPI';
-import logo from "../../assets/Image/logo.png";
+
 import { setLoggedIn } from '../../redux/slices/authSlice';
 import { setShopOnwer, setToken, setUserId, setUserName } from '../../utils/localStorageUtils';
 
@@ -63,7 +63,7 @@ function Signin() {
           <div className="signin">
             <div className="signin__left">
               <div className="signin__left--logo">
-                <img src={logo} alt="" style={{ width: 100, height: 200 }} />
+                <img src="/image/logo.jpg" alt="" style={{ width: 100, height: 200 }} />
               </div>
               <div className="signin__left--text">
                 <p className="signin__left--text-tittle">
@@ -86,12 +86,6 @@ function Signin() {
                 <input type="submit" className="submit" value="Sign in" onClick={handleSigin} />
                 <a className="forgotpassword" href=''>Forgot password</a>
               </form>
-              <div className='signin__right--icon'>
-                <div className='faFacebookF'><FontAwesomeIcon icon={faFacebookF} className='faFacebookF_icon' /><p>Facebook</p></div>
-                <div className="faGoogle"><FontAwesomeIcon icon={faGoogle} className='faGoogle_icon' /><p>Google</p></div>
-                <div className="faTwitter"><FontAwesomeIcon icon={faTwitter} className='faTwitter_icon' /><p>Twitter</p></div>
-              </div>
-              <p className='no__account'>Don't you have an? <Link to="/sign-up">Sign up</Link> now</p>
             </div>
           </div >
         </div>
