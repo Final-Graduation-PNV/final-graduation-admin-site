@@ -20,7 +20,7 @@ function AddCategory({ toggle,setToggle, closeModal }) {
     };
     const handleSubmit = () => {
         const token = localStorage.getItem("token")
-        axios.post("http://ec2-54-193-79-196.us-west-1.compute.amazonaws.com/api/admin/categories", { name: category.category },
+        axios.post("https://codenguoi.site/api/admin/categories", { name: category.category },
             {
                 headers: {
                     'Content-Type': 'application/json',

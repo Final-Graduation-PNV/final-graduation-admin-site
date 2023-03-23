@@ -63,7 +63,7 @@ function Signin() {
           <div className="signin">
             <div className="signin__left">
               <div className="signin__left--logo">
-                <img src="/image/logo.jpg" alt="" style={{ width: 100, height: 200 }} />
+                <img src="/image/logomain1.png" alt="" style={{ width: 100, height: 200 }} />
               </div>
               <div className="signin__left--text">
                 <p className="signin__left--text-tittle">

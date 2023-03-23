@@ -39,7 +39,7 @@ function SideBar({ menu }) {
             <div className='sidebar-container'>
                 <div className='sidebar-logo-container'>
                     <img
-                        src='/image/logo.jpg'
+                        src='/image/logomain1.png'
                         alt="logo" />
                 </div>
 

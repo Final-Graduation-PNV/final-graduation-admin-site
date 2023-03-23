@@ -3,7 +3,7 @@ const sidebar_menu = [
         id: 2,
         icon: '/icons/shipping.svg',
         path: '/',
-        title: 'Manage Users',
+        title: 'Manage Shop Owners',
     },
     {
         id: 3,

@@ -23,7 +23,7 @@ function EditCategory({ data, toggle,setToggle, closeModal }) {
     };
     const handleSubmit = () => {
         const token = localStorage.getItem("token")
-        axios.patch("http://ec2-54-193-79-196.us-west-1.compute.amazonaws.com/api/admin/categories/"+data.id, { name: category.name },
+        axios.patch("https://codenguoi.site/api/admin/categories/"+data.id, { name: category.name },
             {
                 headers: {
                     'Content-Type': 'application/json',

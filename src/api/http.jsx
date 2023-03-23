@@ -2,7 +2,7 @@ import axios from "axios";
 import { getToken } from "../utils/localStorageUtils";
 
 const http = axios.create({
-  baseURL: "http://ec2-54-193-79-196.us-west-1.compute.amazonaws.com/api/"
+  baseURL: "https://codenguoi.site/api/"
 })
 
 http.interceptors.request.use(
