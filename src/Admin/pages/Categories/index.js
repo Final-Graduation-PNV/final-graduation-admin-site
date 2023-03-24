@@ -10,7 +10,8 @@ import './styles.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPen } from "@fortawesome/free-solid-svg-icons";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
-import { deleteCategory, getAdminCategories } from '../../../api/admin';
+import { deleteCategory } from '../../../api/admin';
+import { getCategories } from '../../../api/categories';
 
 
 import SideBar from '../../components/Sidebar';
@@ -26,18 +27,20 @@ function Categories({ openAddModal, openEditModal, setEditData, toggle, setToggl
     const [categories, setCategories] = useState([]);
 
     useEffect(() => {
-        const getCategories = async () => {
+        const getCate = async () => {
             try {
-                const res = await getAdminCategories()
+                const res = await getCategories()
                 setCategories(res.data.categories)
             } catch (err) {
                 console.log("Err get shop products: ", err)
             }
         }
-        getCategories()
+        getCate()
     }, [toggle]);
+    console.log("dầ",categories)
 
     const deleteHandle = async (id) => {
+        
         var isConfirmed = window.confirm("Are you sure for deleting?")
         if (isConfirmed) {
             try {

@@ -7,20 +7,20 @@ import './styles.scss';
 
 
 function AddCategory({ toggle,setToggle, closeModal }) {
-    const [category, setCategory] = useState([]);
+    const [category, setCategory] = useState("");
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setCategory({
-            ...category,
-            [name]: value,
-        });
-        console.log("category: ", category.category);
+    // const handleChange = (e) => {
+    //     const { name, value } = e.target;
+    //     setCategory({
+    //         ...category,
+    //         [name]: value,
+    //     });
+    //     console.log("category: ", category);
 
-    };
+    // };
     const handleSubmit = () => {
         const token = localStorage.getItem("token")
-        axios.post("https://codenguoi.site/api/admin/categories", { name: category.category },
+        axios.post("https://codenguoi.site/api/admin/categories", { name: category },
             {
                 headers: {
                     'Content-Type': 'application/json',
@@ -37,7 +37,7 @@ function AddCategory({ toggle,setToggle, closeModal }) {
                 console.log("Er admin web onwer", error);
             });
     }
-
+console.log()
     return (
         <>
             <div className="add-category">
@@ -51,7 +51,7 @@ function AddCategory({ toggle,setToggle, closeModal }) {
                         name='category'
                         placeholder='Category'
                         value={category.data}
-                        onChange={handleChange}
+                        onChange={(e)=>{setCategory(e.target.value)}}
                         required="required"
                     />
                     <button className='add-category__form__button' onClick={handleSubmit}> Add new </button>
